@@ -256,7 +256,7 @@ This approach allows for deeper analysis by learning from diverse experiences in
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Describe the situation (e.g., A riot happens at Connaught place gate 2)"
+              placeholder="Tell  in detail about individuals you want to connect with"
               className="w-full p-4 pl-12 pr-24 bg-black/50 backdrop-blur-xl 
                 border border-emerald-500/20 rounded-xl text-white
                 placeholder-gray-400 focus:outline-none focus:border-emerald-500

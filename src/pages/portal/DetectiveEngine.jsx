@@ -228,7 +228,7 @@ Instructions: Provide career options that are suitable based on the user's backg
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="E.g., What is the punishment under IPC 420 for corporate fraud?"
+              placeholder="Tell us about your career goals"
               className="w-full p-4 pl-12 pr-24 bg-black/50 backdrop-blur-xl 
                 border border-cyan-500/20 rounded-xl text-white
                 placeholder-gray-400 focus:outline-none focus:border-cyan-500/50

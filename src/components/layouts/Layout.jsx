@@ -10,8 +10,10 @@ import {
   ChevronLeft,
   ChevronRight,
   User,
-  Home,
+  Home,BriefcaseBusiness, 
+  CalendarCheck,
   Cable,
+  Lock,
   GraduationCap,
   MessageSquare,
   BarChart2,
@@ -102,6 +104,18 @@ const Layout = () => {
       label: "Industry Link",
       path: "/dashboard/analysis",
       isPro: true,
+    },
+    {
+      icon: CalendarCheck,
+      label: "Level Up",
+      develop:true,
+      disable:true
+    },
+    {
+      icon: BriefcaseBusiness,
+      label: "Career Simulation",
+      develop:"true",
+      disable:true
     },
     { icon: BarChart2, label: "Expense Forecaster", path: "/dashboard/knowledge" },
   ];
@@ -201,9 +215,10 @@ const Layout = () => {
               key={index}
               to={item.path}
               end={item.path === "/dashboard"}
+              disabled={item.disable}
               className={({ isActive }) =>
                 `flex items-center gap-4 cursor-pointer px-4 py-3 rounded-xl transition-all duration-300 ${
-                  isActive
+                  isActive && !item.disable
                     ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-400 border border-cyan-500/30"
                     : "text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400"
                 }`
@@ -217,6 +232,11 @@ const Layout = () => {
                   {item.isPro && (
                     <span className="ml-2 px-1.5 py-0.5 text-xs font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-black rounded-md">
                       PRO
+                    </span>
+                  )}
+                  {item.develop && (
+                    <span className="ml-2 px-1.5 py-0.5 text-xs font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-black rounded-md">
+                      <Lock /> 
                     </span>
                   )}
                 </div>

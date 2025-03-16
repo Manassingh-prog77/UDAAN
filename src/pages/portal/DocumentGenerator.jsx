@@ -28,7 +28,7 @@ const DocumentGenerator = () => {
   useEffect(() => {
     if (userInteracted) {
       const welcomeMessage =
-        "Hello sir, my name is Jarvis, and I am your AI counsellor. To get started, click on the mic button shown below and tell me your query.";
+        "Hello sir, my name is Drona, and I am your AI counsellor. To get started, click on the mic button shown below and tell me your query.";
       const utterance = new SpeechSynthesisUtterance(welcomeMessage);
       utterance.lang = "en-US";
       utterance.pitch = 1;
@@ -66,11 +66,11 @@ const DocumentGenerator = () => {
               parts: [
                 {
                   text: `
-                  You are an AI named Jarvis, acting as a seasoned career counselor with extensive knowledge across all career domains. Your role is to analyze the user's input and provide insightful career guidance, helping them navigate their professional journey effectively. If the user's query falls outside the scope of career counseling, such as academic subject questions or unrelated topics, politely inform them that your expertise is limited to career guidance and encourage them to ask relevant questions.
+                  You are an AI named Drona, acting as a seasoned career counselor with extensive knowledge across all career domains. Your role is to analyze the user's input and provide insightful career guidance, helping them navigate their professional journey effectively. If the user's query falls outside the scope of career counseling, such as academic subject questions or unrelated topics, politely inform them that your expertise is limited to career guidance and encourage them to ask relevant questions.
   
                   **User Input:** ${usertranscript}
   
-                  **Guidelines for Jarvis:**
+                  **Guidelines for Drona:**
                   - Listen attentively to the user's concerns and aspirations.
                   - Provide personalized advice based on the user's background, interests, and goals.
                   - Suggest actionable steps or resources to assist the user in their career development.
