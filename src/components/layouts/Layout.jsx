@@ -114,8 +114,7 @@ const Layout = () => {
     {
       icon: BriefcaseBusiness,
       label: "Career Simulation",
-      develop:"true",
-      disable:true
+      path: "/dashboard/experince",
     },
     { icon: BarChart2, label: "Budget Buddy", path: "/dashboard/knowledge" },
   ];

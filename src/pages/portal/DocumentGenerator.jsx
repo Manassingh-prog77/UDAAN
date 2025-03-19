@@ -121,7 +121,7 @@ const DocumentGenerator = () => {
       <Box
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <AvatarScene/>
+        <AvatarScene isSpeaking={isSpeaking}/>
       </Box>
       {!userInteracted && (
         <Box
