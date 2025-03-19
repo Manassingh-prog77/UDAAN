@@ -4,8 +4,8 @@ import { Mic, Pause } from "@mui/icons-material";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
-import avatar from "../../avataer.png";
 import axios from "axios";
+import AvatarScene from "../../assests/Avatar";
 
 const DocumentGenerator = () => {
   const {
@@ -121,7 +121,7 @@ const DocumentGenerator = () => {
       <Box
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <img src={avatar} alt="Counselor Avatar" className="w-100 h-100" />
+        <AvatarScene/>
       </Box>
       {!userInteracted && (
         <Box

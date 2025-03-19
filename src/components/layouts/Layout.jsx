@@ -117,7 +117,7 @@ const Layout = () => {
       develop:"true",
       disable:true
     },
-    { icon: BarChart2, label: "Expense Forecaster", path: "/dashboard/knowledge" },
+    { icon: BarChart2, label: "Budget Buddy", path: "/dashboard/knowledge" },
   ];
 
   const Navbar = () => (
