@@ -114,10 +114,9 @@ const Layout = () => {
     {
       icon: BriefcaseBusiness,
       label: "Career Simulation",
-      develop:"true",
-      disable:true
+      path: "/dashboard/experince",
     },
-    { icon: BarChart2, label: "Expense Forecaster", path: "/dashboard/knowledge" },
+    { icon: BarChart2, label: "Budget Buddy", path: "/dashboard/knowledge" },
   ];
 
   const Navbar = () => (

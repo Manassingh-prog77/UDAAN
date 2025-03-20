@@ -16,6 +16,7 @@ import DocumentGenerator from "./pages/portal/DocumentGenerator";
 import DetectiveEngine from "./pages/portal/DetectiveEngine";
 import SurakshaSetu from "./pages/portal/SurakshaSetu";
 import RoadmapPage from "./pages/portal/Roadmap";
+import CareerTasks from "./pages/portal/Forage"
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="investigation" element={<DetectiveEngine />} />
           <Route path="analysis" element={<SurakshaSetu />} />
           <Route path="investigation/roadmap" element={<RoadmapPage />} />
+          <Route path="experince" element={<CareerTasks />} />
         </Route>
       </Route>
 
